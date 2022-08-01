@@ -1,0 +1,14 @@
+[Unit]
+Description=Turn off Button
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=Lutz
+ExecStart=python3 /home/Lutz/switch_off.py
+
+[Install]
+WantedBy=multi-user.target
