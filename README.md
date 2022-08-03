@@ -3,7 +3,8 @@
 
 sudo nano /boot/config.txt
 
-# Ein- und Ausschalten 
+# switch on an off
+
 dtoverlay=gpio-shutdown,gpio_pin=3, active_low=1,gpio_pull=up
 
 
